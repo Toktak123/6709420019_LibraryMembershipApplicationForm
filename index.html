@@ -7,6 +7,77 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+
+    <div id="title"></div>
+
+    <main>
+        <form action="">
+            <label for="first-name-th">ชื่อจริง (ภาษาไทย):</label>
+            <input type="text" id="first-name-th" name="first-name-th">
+            <label for="name">นามสกุล (ภาษาไทย):</label>
+            <input type="text" id="last-name-th" name="last-name-th"><br><br>
+
+            <label for="first-name-en">ชื่อจริง (English):</label>
+            <input type="text" id="first-name-en" name="first-name-en">
+            <label for="last-name-en">นามสกุล (English):</label>
+            <input type="text" id="last-name-en" name="last-name-en"><br><br>
+
+            <label for="gender">เพศ:</label>
+            <input type="radio" id="gender" name="gender" value="ชาย"> ชาย
+            <input type="radio" id="gender" name="gender" value="หญิง"> หญิง
+            <input type="radio" id="gender" name="gender" value="ชาย"> อื่น ๆ
+
+            <label for="stu-id">รหัสนักศึกษา:</label>
+            <input type="number" id="stu-id" name="stu-id" minlength="10" maxlength="10">
+
+            <label for="faculty">คณะที่ศึกษา:</label>
+            <select name="faculty" id="faculty">
+                <option value="คณะนิติศาสตร์">คณะนิติศาสตร์</option>
+                <option value="คณะรัฐศาสตร์">คณะรัฐศาสตร์</option>
+                <option value="คณะพาณิชยศาสตร์และการบัญชี">คณะพาณิชยศาสตร์และการบัญชี</option>
+                <option value="คณะเศรษฐศาสตร์">คณะเศรษฐศาสตร์</option>
+                <option value="คณะสังคมสงเคราะห์ศาสตร์">คณะสังคมสงเคราะห์ศาสตร์</option>
+                <option value="คณะสังคมวิทยาและมานุษยวิทยา">คณะสังคมวิทยาและมานุษยวิทยา</option>
+                <option value="คณะศิลปศาสตร์">คณะศิลปศาสตร์</option>
+                <option value="คณะศิลปกรรมศาสตร์">คณะศิลปกรรมศาสตร์</option>
+                <option value="คณะวารสารศาสตร์และสื่อสารมวลชน">คณะวารสารศาสตร์และสื่อสารมวลชน</option>
+                <option value="คณะวิทยาการเรียนรู้และศึกษาศาสตร์">คณะวิทยาการเรียนรู้และศึกษาศาสตร์</option>
+                <option value="คณะวิทยาศาสตร์และเทคโนโลยี">คณะวิทยาศาสตร์และเทคโนโลยี</option>
+                <option value="คณะวิศวกรรมศาสตร์">คณะวิศวกรรมศาสตร์</option>
+                <option value="คณะสถาปัตยกรรมศาสตร์และการผังเมือง">คณะสถาปัตยกรรมศาสตร์และการผังเมือง</option>
+                <option value="คณะแพทยศาสตร์">คณะแพทยศาสตร์</option>
+                <option value="คณะทันตแพทยศาสตร์">คณะทันตแพทยศาสตร์</option>
+                <option value="คณะสหเวชศาสตร์">คณะสหเวชศาสตร์</option>
+                <option value="คณะพยาบาลศาสตร์">คณะพยาบาลศาสตร์</option>
+                <option value="คณะสาธารณสุขศาสตร์">คณะสาธารณสุขศาสตร์</option>
+                <option value="คณะเภสัชศาสตร์">คณะเภสัชศาสตร์</option>
+                <option value="อื่น ๆ" selected>อื่น ๆ</option>
+            </select>
+
+            <label for="email">ที่อยู่อีเมล:</label>
+            <input type="email" id="email" name="email">
+
+            <label for="birth-day">วันเดือนปีเกิด:</label>
+            <input type="date" name="birth-day" id="birth-day">
+
+            <label for="book-category">ประเภทของหนังสือที่สนใจ:</label>
+            <input type="checkbox" name="book-category" value="นิยาย">นิยาย
+            <input type="checkbox" name="book-category" value="สารคดี">สารคดี
+            <input type="checkbox" name="book-category" value="วิทยาศาสตร์">วิทยาศาสตร์
+            <input type="checkbox" name="book-category" value="ประวัติศาสตร์">ประวัติศาสตร์
+            <input type="checkbox" name="book-category" value="ศิลปะ">ศิลปะ
+            <input type="checkbox" name="book-category" value="การศึกษา">การศึกษา
+            <input type="checkbox" name="book-category" value="การพัฒนาตนเอง">การพัฒนาตนเอง
+            <input type="checkbox" name="book-category" value="การท่องเที่ยว">การท่องเที่ยว
+            <input type="checkbox" name="book-category" value="วรรณกรรม">วรรณกรรม
+            <input type="checkbox" name="book-category" value="การเงินและธุรกิจ">การเงินและธุรกิจ
+            <input type="checkbox" name="book-category" value="สุขภาพและการแพทย์">สุขภาพและการแพทย์
+
+            <label for="newsletter">ความต้องการรับข่าวสารข้อมูลของห้องสมุดทางอีเมลหรือไม่:</label>
+            <input type="radio" id="newsletter" name="newsletter" value="yes"> รับ
+            <input type="radio" id="newsletter" name="newsletter" value="no"> ไม่รับ
+            
+        </form>
+    </main>
 </body>
 </html>
