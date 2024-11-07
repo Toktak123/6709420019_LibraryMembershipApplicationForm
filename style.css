@@ -24,14 +24,14 @@ main{
 h1{
     margin-top: 35px;
     margin-bottom: 30px;
-    color: #2683f5;
+    color: #20aaff;
     font-weight: bold;
     font-size: 35px;
 }
 
 legend{
     font-size:22px;
-    color: #2683f5;
+    color: #009dff;
 }
 
 label{

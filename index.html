@@ -18,25 +18,25 @@
                 <div class="name-grid">
                     <div class="name-grid-child">
                         <label for="first-name-th">ชื่อจริง<span class="red">*</span></label>
-                        <input type="text" id="first-name-th" name="first-name-th" required>
+                        <input type="text" id="first-name-th" name="first-name-th" pattern="^[ก-๏]+$" required>
                     </div>
      
                     <div class="name-grid-child">
                         <label for="last-name-th">นามสกุล<span class="red">*</span></label>
-                        <input type="text" id="last-name-th" name="last-name-th" required>
+                        <input type="text" id="last-name-th" name="last-name-th" pattern="^[ก-๏]+$" required>
                     </div>
                 </div>
                 
                 <p>ภาษาอังกฤษ</p>
                 <div class="name-grid">
                     <div class="name-grid-child">
-                        <label for="first-name-en">ชื่อจริง</label>
-                        <input type="text" id="first-name-en" name="first-name-en">
+                        <label for="first-name-en">ชื่อจริง<span class="red">*</span></label>
+                        <input type="text" id="first-name-en" name="first-name-en" pattern="^[a-zA-Z]+$" required>
                     </div>
     
                     <div class="name-grid-child">
-                        <label for="last-name-en">นามสกุล</label>
-                        <input type="text" id="last-name-en" name="last-name-en">
+                        <label for="last-name-en">นามสกุล<span class="red">*</span></label>
+                        <input type="text" id="last-name-en" name="last-name-en" pattern="^[a-zA-Z]+$" required>
                     </div>
                 </div>
 
@@ -59,7 +59,7 @@
 
                 <div id="stu-id" class="info-grid">
                     <label for="stu-id">รหัสนักศึกษา<span class="red">*</span></label>
-                    <input type="number"  name="stu-id" min="1000000000" max="9999999999" required>
+                    <input type="text" name="stu-id" pattern="[0-9]{10}" required>
                 </div>
 
                 <div id="faculty" class="info-grid">
@@ -89,8 +89,8 @@
                 </div>
  
                 <div id="birth-day" class="info-grid">
-                    <label for="birth-day">วันเดือนปีเกิด</label>
-                    <input type="date" name="birth-day">
+                    <label for="birth-day">วันเดือนปีเกิด<span class="red">*</span></label>
+                    <input type="date" name="birth-day" required>
                 </div>
 
                 <div id="book-category">
